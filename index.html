@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash html</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('hotel.jpg') center/cover;
+            background-color: #f5f5f5; /* fallback color in case image fails to load */
+        }
+
+        header {
+            
+            background-color: #333;
+            color: rgb(12, 4, 4);
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background: url('booking.jpg') center/cover;
+            background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            font-size: larger;
+            font-weight: 500;
+            line-height: 2.6;
+            color: rgb(57, 15, 224);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+        header {
+    background-color: rgb(220, 248, 149); /* Change to white */
+    color: #333;
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+label {
+    font-size: larger;
+    font-weight: 800;
+            display: block;
+            margin-bottom: 0.5em;
+            color: hsl(0, 8%, 3%); /* Change label color */
+        }
+
+       
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>hotel Mangesh</h1>
+        <h3>Experience Comfort and Luxury</h3>
+    </header>
+
+    <section>
+        <h2>Welcome to our Hotel</h2>
+        <p>Indulge in a luxurious stay at Your Hotel. Our rooms are designed for your comfort, and our facilities ensure a memorable experience.</p>
+
+        <img src="hotel-image.jpg" alt="">
+
+        <h2>Book Your Stay</h2>
+        <p>Plan your trip and reserve your room today. We look forward to welcoming you!</p>
+        
+        <a href="#booking" class="cta-button">Book Now</a>
+    </section>
+
+    <section>
+        <h1>Book Now</h1>
+        <h3>Fill out the form below to book your stay at Your Hotel.</h3>
+
+        
+        <form id="bookingForm" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+            <br><br>
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+            <br><br>
+
+            <a href="#booking" class="cta-button" button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 mangesh Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
